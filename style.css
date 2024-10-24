@@ -163,3 +163,55 @@ img {
   }
 }
 
+
+/* heart shape addition */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #EAF5E3;
+}
+
+.heart {
+  position: relative;
+  width: 150px;
+  height: 130px;
+  background-color: #90C290;
+  margin: 50px auto;
+  transform: rotate(-45deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #90C290;
+}
+
+.heart::before {
+  top: -75px;
+  left: 0;
+}
+
+.heart::after {
+  left: 75px;
+  top: 0;
+}
+
+.text-on-heart {
+  position: absolute;
+  transform: rotate(45deg);
+  top: 35%;
+  left: 12%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2F552F;
+}
+
+

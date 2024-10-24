@@ -215,3 +215,28 @@ img {
 }
 
 
+/* gradient to happy bday */
+.text-on-heart {
+  position: absolute;
+  transform: rotate(45deg);
+  top: 35%;
+  left: 12%;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffb6c1, #ff0000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-shift 3s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+

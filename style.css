@@ -7,7 +7,7 @@ body, html {
 
 body {
   font-family: 'Ysabeau', sans-serif;
-  background-color: #f8e8e9; /* soft pink background */
+  background-color: #e8f5e9; /* soft green background */
   color: #2e7d32; /* darker green text */
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh; /* Adjusted height for better alignment */
   width: 100vw;
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .heart::after {
-  top: 0;
+  top: -100px;
   left: 100px;
 }
 
@@ -71,7 +71,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg); /* Centered and rotated text */
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -93,10 +93,11 @@ body {
   }
 }
 
-/* Final "click here" link outside of card */
+/* Final "click here" link below the card */
 .final-click-here {
   margin-top: 20px;
   text-align: center;
+  width: 100%; /* Centering click here at the bottom */
 }
 
 .final-click-here a {

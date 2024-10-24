@@ -241,3 +241,24 @@ img {
     background-position: 100% 50%;
   }
 }
+
+
+
+/* General body and font settings */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Ysabeau', sans-serif;
+  background-color: #f0f8e2; /* Pale light green */
+  color: #2e7d32; /* darker green text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+

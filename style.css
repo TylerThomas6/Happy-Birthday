@@ -1,29 +1,112 @@
-/* General body and font settings */
+
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
+
 body {
   font-family: 'Ysabeau', sans-serif;
-  background-color: #e8f5e9; /* soft green background */
-  color: #2e7d32; /* darker green text */
+  background-color: #e8f5e9; /* light green color background */
+  color: #2e7d32; /* darker green for text */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  flex-direction: column;
 }
 
-/* Main content container */
+
+.main-content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+h1 {
+  font-size: 48px;
+  color: transparent;
+  background: linear-gradient(90deg, #43a047, #1e88e5, #43a047, #1e88e5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 200% 100%; /* Double the size for smooth animation */
+
+
+  /* Add animation */
+  animation: gradientShift 5s linear infinite;
+}
+
+
+hr {
+  width: 60%;
+  margin: 20px auto;
+  border: none;
+  height: 3px;
+  background-color: #1b5e20;
+}
+
+
+p {
+  font-size: 24px;
+}
+
+
+a {
+  text-decoration: none;
+  color: #43a047; /* medium green */
+  font-weight: bold;
+}
+
+
+a:hover {
+  color: #2e7d32; /* darker green on hover */
+}
+
+
+img {
+  width: 80%;
+  margin-top: 10px;
+}
+
+
+/* Adjust the squeak-text class */
+.squeak-text {
+  font-weight: bold; /* Make it bold */
+  color: #1b5e20; /* Make it slightly darker */
+  font-size: 28px; /* Make the text bigger */
+}
+
+
+.mouse-and-cheese {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Aligns mouse and cheese at the bottom */
+  margin-top: 30px;
+}
+
+
+#stationary-mouse {
+  width: 150px;
+  margin-right: 20px; /* Adds space between the mouse and cheese */
+  z-index: 10;
+}
+
+
+#cheese {
+  width: 115px; /* Adjust size of cheese */
+  z-index: 10;
+}
+
+
+/* Style for the card */
 .card-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Adjusted height for better alignment */
+  height: 100vh;
   width: 100vw;
 }
+
 
 .card {
   background-color: #a5d6a7; /* soft green */
@@ -35,7 +118,61 @@ body {
   max-width: 600px; /* Set a max width to keep it from getting too large */
 }
 
-/* Heart shape styles */
+
+.card h1 {
+  font-size: 36px;
+  color: #1b5e20;
+}
+
+
+.card p {
+  font-size: 20px;
+  color: #2e7d32;
+}
+
+
+.card a {
+  color: #43a047;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.card a:hover {
+  color: #1b5e20;
+}
+
+
+/* CSS for the paragraph slide 1 */
+.main-content p {
+  font-size: 24px;
+  max-width: 600px;
+  margin: 0 auto; /* Center it on the page */
+  line-height: 1.5;
+}
+
+
+/* Keyframes for gradient animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+
+/* heart shape addition */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #EAF5E3;
+}
+
 .heart {
   position: relative;
   width: 200px;
@@ -57,25 +194,38 @@ body {
 }
 
 .heart::before {
-  top: -100px;
+  top: -100px; /* Adjusted to align the circle properly */
   left: 0;
 }
 
 .heart::after {
-  top: -100px;
-  left: 100px;
+  top: 0;
+  left: 100px; /* Correct position for right circle */
 }
 
-/* Text inside heart */
 .text-on-heart {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg); /* Centered and rotated text */
-  font-size: 14px;
+  transform: translate(-50%, -50%) rotate(45deg); /* Centers and rotates text */
+  font-size: 16px;
   font-weight: bold;
-  text-align: center;
-  line-height: 1.5;
+  background: linear-gradient(90deg, #ffb6c1, #ff0000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+/* gradient to happy bday */
+.text-on-heart {
+  position: absolute;
+  transform: rotate(45deg);
+  top: 35%;
+  left: 12%;
+  font-size: 16px;
+  font-weight: bold;
   background: linear-gradient(90deg, #ffb6c1, #ff0000);
   background-clip: text;
   -webkit-background-clip: text;
@@ -83,7 +233,6 @@ body {
   animation: gradient-shift 3s ease-in-out infinite;
 }
 
-/* Gradient animation for heart text */
 @keyframes gradient-shift {
   0% {
     background-position: 0% 50%;
@@ -93,19 +242,4 @@ body {
   }
 }
 
-/* Final "click here" link below the card */
-.final-click-here {
-  margin-top: 20px;
-  text-align: center;
-  width: 100%; /* Centering click here at the bottom */
-}
 
-.final-click-here a {
-  color: #ff69b4; /* pink text */
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.final-click-here a:hover {
-  color: #ff1493; /* darker pink on hover */
-}

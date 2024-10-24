@@ -38,10 +38,10 @@ body {
 /* Heart shape */
 .heart {
   position: relative;
-  width: 250px; /* Increased size */
-  height: 230px; /* Increased height to fit the text */
+  width: 180px; /* Reduced size */
+  height: 160px; /* Adjusted height */
   background-color: #90C290;
-  margin: 50px auto;
+  margin: 0 auto; /* Centering the heart */
   transform: rotate(-45deg);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -50,20 +50,20 @@ body {
 .heart::after {
   content: "";
   position: absolute;
-  width: 250px; /* Increased size to match the heart */
-  height: 250px;
+  width: 180px; /* Matching the heart's width */
+  height: 180px;
   border-radius: 50%;
   background-color: #90C290;
 }
 
 .heart::before {
-  top: -125px; /* Adjusted to align the circle properly */
+  top: -90px; /* Adjusted to align the circle properly */
   left: 0;
 }
 
 .heart::after {
-  top: -125px;
-  left: 125px; /* Correct position for the right circle */
+  top: -90px;
+  left: 90px; /* Correct position for the right circle */
 }
 
 /* Text inside heart */
@@ -72,7 +72,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg); /* Centered and rotated text */
-  font-size: 14px; /* Adjusted font size */
+  font-size: 12px; /* Adjusted font size */
   font-weight: bold;
   text-align: center;
   line-height: 1.5;

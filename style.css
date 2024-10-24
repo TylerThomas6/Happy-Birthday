@@ -176,8 +176,8 @@ img {
 
 .heart {
   position: relative;
-  width: 150px;
-  height: 130px;
+  width: 200px;
+  height: 180px;
   background-color: #90C290;
   margin: 50px auto;
   transform: rotate(-45deg);
@@ -188,31 +188,35 @@ img {
 .heart::after {
   content: "";
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-color: #90C290;
 }
 
 .heart::before {
-  top: -75px;
+  top: -100px; /* Adjusted to align the circle properly */
   left: 0;
 }
 
 .heart::after {
-  left: 75px;
   top: 0;
+  left: 100px; /* Correct position for right circle */
 }
 
 .text-on-heart {
   position: absolute;
-  transform: rotate(45deg);
-  top: 35%;
-  left: 12%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg); /* Centers and rotates text */
   font-size: 16px;
   font-weight: bold;
-  color: #2F552F;
+  background: linear-gradient(90deg, #ffb6c1, #ff0000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
+
 
 
 /* gradient to happy bday */

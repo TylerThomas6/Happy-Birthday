@@ -143,22 +143,6 @@ img {
 }
 
 
-
-/* Running mouse GIF animation */
-.running-mouse {
-  position: absolute;
-  bottom: 0; /* Start at the bottom of the screen */
-  left: -100px; /* Start off-screen */
-}
-
-#running-mouse {
-  width: 150px; /* Adjust the size of the mouse GIF */
-}
-
-
-
-
-
 /* CSS for the paragraph slide 1 */
 .main-content p {
   font-size: 24px;

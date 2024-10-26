@@ -173,13 +173,13 @@ img {
 }
 
 .heart::before {
-  top: -100px; /* Adjusted to align the left circle */
-  left: -10px; /* Moved slightly left to improve alignment */
+  top: -90px; /* Move the left circle slightly down */
+  left: 0px;   /* Center-align the left circle */
 }
 
 .heart::after {
-  top: -100px; /* Keep aligned with left circle */
-  left: 90px; /* Adjusted to improve symmetry and avoid protrusion */
+  top: -90px; /* Move the right circle slightly down */
+  left: 100px; /* Center-align the right circle relative to the left */
 }
 
 /* Text over heart shape with gradient */
@@ -187,14 +187,14 @@ img {
   position: absolute;
   z-index: 2; /* Ensures text is above the heart shape */
   transform: translate(-50%, -50%) rotate(45deg); /* Centers and rotates text */
-  font-size: 20px;
+  font-size: 18px; /* Adjust font size if text overflows */
   font-weight: bold;
   background: linear-gradient(90deg, #ffb6c1, #ff0000);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   text-align: center; /* Center-aligns multi-line text */
-  max-width: 160px; /* Restricts width to avoid text wrapping outside heart */
+  max-width: 120px; /* Restricts width to avoid text wrapping outside heart */
   animation: gradient-shift 3s ease-in-out infinite;
 }
 

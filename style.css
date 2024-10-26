@@ -173,13 +173,13 @@ img {
 }
 
 .heart::before {
-  top: -90px; /* Move the left circle slightly down */
-  left: 0px;   /* Center-align the left circle */
+  top: 0%; /* Move the left circle slightly down */
+  left: 50%; /* Center-align the left circle */
 }
 
 .heart::after {
-  top: -90px; /* Move the right circle slightly down */
-  right: 100px; /* Center-align the right circle relative to the left */
+  top: -50%; /* Move the right circle slightly down */
+  right: 0%; /* Center-align the right circle relative to the left */
 }
 
 /* Text over heart shape with gradient */

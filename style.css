@@ -189,21 +189,22 @@ img {
   transform: translate(-50%, -50%) rotate(45deg); /* Centers and rotates text */
   font-size: 18px; /* Adjust font size if text overflows */
   font-weight: bold;
-  background: linear-gradient(90deg, #ffb6c1, #ff0000);
+  background: linear-gradient(90deg, #ffb6c1, #ff0000, #ffb6c1);
   background-clip: text;
+  background-size: 200% 100%;
   -webkit-background-clip: text;
   color: transparent;
   text-align: center; /* Center-aligns multi-line text */
   max-width: 120px; /* Restricts width to avoid text wrapping outside heart */
-  animation: gradient-shift 3s ease-in-out infinite;
+  animation: gradient-shift 3s linear infinite;
 }
 
 /* Gradient-shift animation for text */
 @keyframes gradient-shift {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
   100% {
-    background-position: 100% 50%;
+    background-position: 200% 0%;
   }
 }

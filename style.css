@@ -1,28 +1,28 @@
-
+/* General body and font settings */
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-
 body {
   font-family: 'Ysabeau', sans-serif;
-  background-color: #e8f5e9; /* light green color background */
-  color: #2e7d32; /* darker green for text */
+  background-color: #f0f8e2; /* Pale light green */
+  color: #2e7d32; /* darker green text */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
 }
 
-
+/* Main content styling */
 .main-content {
   text-align: center;
   margin-top: 100px;
 }
 
-
+/* Heading gradient and animation */
 h1 {
   font-size: 48px;
   color: transparent;
@@ -30,13 +30,10 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   background-size: 200% 100%; /* Double the size for smooth animation */
-
-
-  /* Add animation */
   animation: gradientShift 5s linear infinite;
 }
 
-
+/* Horizontal line styling */
 hr {
   width: 60%;
   margin: 20px auto;
@@ -45,38 +42,36 @@ hr {
   background-color: #1b5e20;
 }
 
-
+/* Paragraph styling */
 p {
   font-size: 24px;
 }
 
-
+/* Link styling */
 a {
   text-decoration: none;
   color: #43a047; /* medium green */
   font-weight: bold;
 }
 
-
 a:hover {
   color: #2e7d32; /* darker green on hover */
 }
 
-
+/* Image styling */
 img {
   width: 80%;
   margin-top: 10px;
 }
 
-
-/* Adjust the squeak-text class */
+/* Squeak-text adjustments */
 .squeak-text {
   font-weight: bold; /* Make it bold */
   color: #1b5e20; /* Make it slightly darker */
   font-size: 28px; /* Make the text bigger */
 }
 
-
+/* Mouse and cheese alignment */
 .mouse-and-cheese {
   display: flex;
   justify-content: center;
@@ -84,21 +79,18 @@ img {
   margin-top: 30px;
 }
 
-
 #stationary-mouse {
   width: 150px;
   margin-right: 20px; /* Adds space between the mouse and cheese */
   z-index: 10;
 }
 
-
 #cheese {
   width: 115px; /* Adjust size of cheese */
   z-index: 10;
 }
 
-
-/* Style for the card */
+/* Card styling */
 .card-container {
   display: flex;
   justify-content: center;
@@ -106,7 +98,6 @@ img {
   height: 100vh;
   width: 100vw;
 }
-
 
 .card {
   background-color: #a5d6a7; /* soft green */
@@ -118,18 +109,15 @@ img {
   max-width: 600px; /* Set a max width to keep it from getting too large */
 }
 
-
 .card h1 {
   font-size: 36px;
   color: #1b5e20;
 }
 
-
 .card p {
   font-size: 20px;
   color: #2e7d32;
 }
-
 
 .card a {
   color: #43a047;
@@ -137,20 +125,17 @@ img {
   text-decoration: none;
 }
 
-
 .card a:hover {
   color: #1b5e20;
 }
 
-
-/* CSS for the paragraph slide 1 */
+/* Main content paragraph styling */
 .main-content p {
   font-size: 24px;
   max-width: 600px;
   margin: 0 auto; /* Center it on the page */
   line-height: 1.5;
 }
-
 
 /* Keyframes for gradient animation */
 @keyframes gradientShift {
@@ -162,17 +147,7 @@ img {
   }
 }
 
-
-/* heart shape addition */
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #EAF5E3;
-}
-
+/* Heart shape styling */
 .heart {
   position: relative;
   width: 200px;
@@ -194,7 +169,7 @@ img {
 }
 
 .heart::before {
-  top: -100px; /* Adjusted to align the circle properly */
+  top: -100px; /* Adjusted to align the left circle */
   left: 0;
 }
 
@@ -203,6 +178,7 @@ img {
   left: 100px; /* Correct position for right circle */
 }
 
+/* Text over heart shape with gradient */
 .text-on-heart {
   position: absolute;
   top: 50%;
@@ -214,25 +190,10 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-}
-
-
-
-/* gradient to happy bday */
-.text-on-heart {
-  position: absolute;
-  transform: rotate(45deg);
-  top: 35%;
-  left: 12%;
-  font-size: 16px;
-  font-weight: bold;
-  background: linear-gradient(90deg, #ffb6c1, #ff0000);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
   animation: gradient-shift 3s ease-in-out infinite;
 }
 
+/* Gradient-shift animation for text */
 @keyframes gradient-shift {
   0% {
     background-position: 0% 50%;
@@ -241,24 +202,3 @@ img {
     background-position: 100% 50%;
   }
 }
-
-
-
-/* General body and font settings */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-body {
-  font-family: 'Ysabeau', sans-serif;
-  background-color: #f0f8e2; /* Pale light green */
-  color: #2e7d32; /* darker green text */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-

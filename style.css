@@ -174,12 +174,12 @@ img {
 
 .heart::before {
   top: -100px; /* Adjusted to align the left circle */
-  left: 0;
+  left: -10px; /* Moved slightly left to improve alignment */
 }
 
 .heart::after {
-  top: 0;
-  left: 100px; /* Correct position for right circle */
+  top: -100px; /* Keep aligned with left circle */
+  left: 90px; /* Adjusted to improve symmetry and avoid protrusion */
 }
 
 /* Text over heart shape with gradient */
@@ -193,6 +193,8 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  text-align: center; /* Center-aligns multi-line text */
+  max-width: 160px; /* Restricts width to avoid text wrapping outside heart */
   animation: gradient-shift 3s ease-in-out infinite;
 }
 

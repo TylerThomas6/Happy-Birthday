@@ -179,7 +179,7 @@ img {
 
 .heart::after {
   top: -90px; /* Move the right circle slightly down */
-  left: 100px; /* Center-align the right circle relative to the left */
+  right: 100px; /* Center-align the right circle relative to the left */
 }
 
 /* Text over heart shape with gradient */

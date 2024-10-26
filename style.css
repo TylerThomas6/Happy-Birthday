@@ -152,4 +152,56 @@ img {
   position: relative;
   width: 200px;
   height: 180px;
-  background
+  background-color: #90C290;
+  margin: 50px auto;
+  transform: rotate(-45deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #90C290;
+  z-index: 1; /* Ensures circles are behind text */
+}
+
+.heart::before {
+  top: -100px; /* Adjusted to align the left circle */
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 100px; /* Correct position for right circle */
+}
+
+/* Text over heart shape with gradient */
+.text-on-heart {
+  position: absolute;
+  z-index: 2; /* Ensures text is above the heart shape */
+  transform: translate(-50%, -50%) rotate(45deg); /* Centers and rotates text */
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffb6c1, #ff0000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-shift 3s ease-in-out infinite;
+}
+
+/* Gradient-shift animation for text */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

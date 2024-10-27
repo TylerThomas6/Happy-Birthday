@@ -186,7 +186,7 @@ img {
 .text-on-heart {
   position: absolute;
   z-index: 2; /* Ensures text is above the heart shape */
-  transform: translate(-50%, -50%) rotate(45deg); /* Centers and rotates text */
+  transform: translate(10%, -10%) rotate(45deg); /* Centers and rotates text */
   font-size: 18px; /* Adjust font size if text overflows */
   font-weight: bold;
   background: linear-gradient(90deg, #ffb6c1, #ff0000, #ffb6c1);
@@ -195,7 +195,7 @@ img {
   -webkit-background-clip: text;
   color: transparent;
   text-align: center; /* Center-aligns multi-line text */
-  max-width: 120px; /* Restricts width to avoid text wrapping outside heart */
+  max-width: 150px; /* Restricts width to avoid text wrapping outside heart */
   animation: gradient-shift 3s linear infinite;
 }
 

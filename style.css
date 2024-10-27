@@ -208,3 +208,11 @@ img {
     background-position: 200% 0%;
   }
 }
+
+/* Starting information for the running mouse gif */
+#running-mouse {
+  position: fixed;
+  display: none; /* Have the gif hidden at the very start */
+  bottom: -40%;
+  width: 50%;
+}

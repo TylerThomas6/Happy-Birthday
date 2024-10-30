@@ -213,7 +213,7 @@ img {
 #running-mouse {
   position: fixed;
   display: none; /* Have the gif hidden at the very start */
-  bottom: -20%;
+  bottom: 0%;
   width: 50%;
 }
 

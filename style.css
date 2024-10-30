@@ -199,6 +199,68 @@ img {
   animation: gradient-shift 3s linear infinite;
 }
 
+/* Circle shape styling */
+.circle {
+  position: relative;
+  /* Diameter = 250sqrt(2) */
+  width: 353.553391px;
+  height: 353.553391px;
+  background-color: #90C290;
+  margin: 50px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* Text over circle shape with gradient */
+.text-on-circle {
+  position: absolute;
+  z-index: 2; /* Ensures text is above the circle shape */
+  font-size: 18px; /* Adjust font size if text overflows */
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffb6c1, #ff0000, #ffb6c1);
+  background-clip: text;
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center; /* Center-aligns multi-line text */
+  max-width: 150px; /* Restricts width to avoid text wrapping outside circle */
+  animation: gradient-shift 3s linear infinite;
+}
+
+/* Diamond shape styling */
+.diamond {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #90C290;
+  margin: 50px auto;
+  transform: rotate(-45deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text over diamond shape with gradient */
+.text-on-diamond {
+  position: absolute;
+  z-index: 2; /* Ensures text is above the diamond shape */
+  transform: rotate(45deg); /* Centers and rotates text */
+  font-size: 18px; /* Adjust font size if text overflows */
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffb6c1, #ff0000, #ffb6c1);
+  background-clip: text;
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center; /* Center-aligns multi-line text */
+  max-width: 150px; /* Restricts width to avoid text wrapping outside diamond */
+  animation: gradient-shift 3s linear infinite;
+}
+
 /* Gradient-shift animation for text */
 @keyframes gradient-shift {
   0% {
@@ -224,22 +286,19 @@ img {
   height: 130%;
 }
 
-#mewtru-card {
-  position: relative;
-  top: 0%;
-  width: 50%;
-  height: 100%;
-}
-
 #mewtru-link {
-  position: fixed;
-  bottom: 15%;
-  font-size: 36px;
-  z-index: 2;
-
-  color: #b89b96;
+  font-size: 29px;
+  background: linear-gradient(90deg, #353a46, #0064ff, #353a46);
+  background-clip: text;
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center; /* Center-aligns multi-line text */
+  max-width: 150px; /* Restricts width to avoid text wrapping outside diamond */
+  animation: gradient-shift 3s linear infinite;
 }
 
-#mewtru-link:hover {
-  color: #6d5f63;
+#favicon-notice {
+  position: absolute;
+  top: 57.5%;
 }

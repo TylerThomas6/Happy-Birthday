@@ -216,3 +216,30 @@ img {
   bottom: -40%;
   width: 50%;
 }
+
+#wheel {
+  position: relative;
+  top: 0%;
+  width: 40%;
+  height: 130%;
+}
+
+#mewtru-card {
+  position: relative;
+  top: 0%;
+  width: 50%;
+  height: 100%;
+}
+
+#mewtru-link {
+  position: fixed;
+  bottom: 15%;
+  font-size: 36px;
+  z-index: 2;
+
+  color: #b89b96;
+}
+
+#mewtru-link:hover {
+  color: #6d5f63;
+}

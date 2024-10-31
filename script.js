@@ -63,8 +63,8 @@ function startFloatingMouseGifOnLoad() {
   floatMouseDown(); // Start the mouse movement
 }
 
-// Function for the surpise mouse on card.html
-function startMovingMouseGifOnLoad() {
+// Function for the surprise mouse on card.html
+function surpriseMouse() {
   const mouse = document.getElementById("surprise-mouse");
   document.getElementById("clickable-cheese").addEventListener("click", surprise);
 

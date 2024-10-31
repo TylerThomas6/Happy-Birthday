@@ -62,3 +62,25 @@ function startFloatingMouseGifOnLoad() {
 
   floatMouseDown(); // Start the mouse movement
 }
+
+// Function for the surpise mouse on card.html
+function startMovingMouseGifOnLoad() {
+  const mouse = document.getElementById("surprise-mouse");
+  document.getElementById("clickable-cheese").addEventListener("click", surprise);
+
+  const offsetFrames = ["-50px", "-65px", "-70px", "-80px", "-95px", "-115px", "-120px", "-115px", "-110px"];
+  let index = 0;
+
+  function surprise() {
+    console.log("Surpise!" + index);
+
+    if (index < offsetFrames.length) {
+      console.log(offsetFrames[index]);
+      mouse.style.transform = "translate(0px, " + offsetFrames[index] + ")";
+      index++;
+      requestAnimationFrame(surprise);
+    }
+  }
+
+  moveMouse(); // Start the mouse movement
+}

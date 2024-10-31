@@ -344,7 +344,7 @@ img {
 /* Hoverable mouse on the bottom right of card4 */
 #hoverable-mouse-1 {
   position: fixed;
-  bottom: -50vh;
+  bottom: -40vh;
   right: 2.5vw;
   width: 25%;
   
@@ -352,14 +352,14 @@ img {
 }
 
 #hoverable-mouse-1:hover {
-  bottom: -30vh;
+  bottom: -20vh;
 }
 
 /* Hoverable mouse on the top left of card4 */
 #hoverable-mouse-2 {
   position: fixed;
   top: -5vh;
-  left: -20vw;
+  left: -10vw;
   width: 25%;
   transform: rotate(90deg);
   
@@ -367,5 +367,5 @@ img {
 }
 
 #hoverable-mouse-2:hover {
-  left: -10vw;
+  left: 0vw;
 }

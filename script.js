@@ -68,7 +68,24 @@ function surpriseMouse() {
   const mouse = document.getElementById("surprise-mouse");
   document.getElementById("clickable-cheese").addEventListener("click", surprise);
 
-  const offsetFrames = ["-50px", "-65px", "-70px", "-80px", "-95px", "-115px", "-120px", "-115px", "-110px"];
+  let offsetFrames = [];
+  let startingPercentage = -80;
+  let curOffset = 0;
+  while (startingPercentage < 0) {
+    curOffset += startingPercentage;
+    offsetFrames.push(curOffset + "%");
+    offsetFrames.push(curOffset + "%");
+    startingPercentage = (startingPercentage / 2.5) + 1;
+  }
+
+  startingPercentage = 10;
+  while (startingPercentage > 0) {
+    curOffset += startingPercentage;
+    offsetFrames.push(curOffset + "%");
+    offsetFrames.push(curOffset + "%");
+    startingPercentage = (startingPercentage / 2) - 1;
+  }
+  
   let index = 0;
 
   function surprise() {

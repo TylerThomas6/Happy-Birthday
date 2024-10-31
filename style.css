@@ -277,6 +277,7 @@ img {
   bottom: -40%;
   width: 50%;
   display: none; /* Have the gif hidden at the very start */
+  z-index: -1;
 }
 
 /* Starting information for the floating mouse gif */

@@ -5,11 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Your Special Birthday Card</title>
-  <link rel="icon" type="images/favicon.ico" href="favicon.ico">
+  <link rel="icon" type="favicon.ico" href="/images/favicon.ico">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <!-- External JavaScript -->
+  <script type="text/javascript" src="script.js"></script>
+
   <div class="card-container">
     <div class="card">
       <h1>Happy Birthday Again!</h1>
@@ -19,15 +22,22 @@
     </div>
   </div>
 
-  <!-- Adding the running mouse GIF -->
+
+  <!-- Adding the running mouse GIF
   <div class="running-mouse">
     <img id="running-mouse" src="images/sample-image.png" alt="Test Image">
-    <!-- <img id="running-mouse" src="path-to-your-mouse.gif" alt="Running Mouse"> -->
+    <img id="running-mouse" src="path-to-your-mouse.gif" alt="Running Mouse">
+  </div>-->
+
+  <!-- Adding the clickable cheese and mouse -->
+  <div class="mouse-and-cheese">
+    <img id="clickable-cheese" src="cheese-2.png" alt="Clickable Cheese">
+    <span id="clickable-cheese-text">&lt &lt click on me!</span>
+    <img id="surprise-mouse" src="surprise-mouse.png" alt="Surprise Mouse">
+    
+    <body onload="surpriseMouse()">
   </div>
 
-
-  <!-- External JavaScript -->
-  <script src="script.js"></script>
 
 </body>
 

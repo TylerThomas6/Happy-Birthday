@@ -81,6 +81,4 @@ function startMovingMouseGifOnLoad() {
       requestAnimationFrame(surprise);
     }
   }
-
-  moveMouse(); // Start the mouse movement
 }

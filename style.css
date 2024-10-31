@@ -307,7 +307,13 @@ img {
   width: 9%;
   z-index: -1;
   
-  /*display: none; /* Have the gif hidden at the very start */
+  display: none; /* Have the gif hidden at the very start */
+}
+
+#rat-dancing {
+  position: fixed;
+  bottom: 10%;
+  width: 10%;
 }
 
 #wheel {
@@ -332,4 +338,33 @@ img {
 #favicon-notice {
   position: absolute;
   top: 57.5%;
+}
+
+/* Hoverable mouse on the bottom right of card4 */
+#hoverable-mouse-1 {
+  position: fixed;
+  bottom: -50vh;
+  right: 2.5vw;
+  width: 25%;
+  
+  transition: bottom ease-in-out 1s;
+}
+
+#hoverable-mouse-1:hover {
+  bottom: -30vh;
+}
+
+/* Hoverable mouse on the top left of card4 */
+#hoverable-mouse-2 {
+  position: fixed;
+  top: -5vh;
+  left: -20vw;
+  width: 25%;
+  transform: rotate(90deg);
+  
+  transition: left ease-in-out 1s;
+}
+
+#hoverable-mouse-2:hover {
+  left: -10vw;
 }

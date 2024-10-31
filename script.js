@@ -44,7 +44,6 @@ function startFloatingMouseGifOnLoad() {
     mouse.style.top = position + "px";
 
     if (position < screenHeight) {
-      console.log("HI")
       requestAnimationFrame(floatMouseDown); // Continue moving
     } else {
       mouse.style.display = "none"; // Hide the mouse when it reaches the end
@@ -66,11 +65,14 @@ function startFloatingMouseGifOnLoad() {
 // Function for the surprise mouse on card.html
 function surpriseMouse() {
   const mouse = document.getElementById("surprise-mouse");
+  const cheese = document.getElementById("clickable-cheese");
   document.getElementById("clickable-cheese").addEventListener("click", surprise);
 
+  // Array to store the "animation frames" that move the surprise mouse up
   let offsetFrames = [];
   let index = 0;
-  
+
+  // Add the appropriate "animation frames" to offsetFrames
   let startingPercentage = -80;
   let curOffset = 0;
   while (startingPercentage < 0) {
@@ -80,13 +82,15 @@ function surpriseMouse() {
     startingPercentage = (startingPercentage / 2.5) + 1;
   }
 
+  // Function to move the surprise mouse up
   function surprise() {
-    console.log("Surpise!" + index);
+    mouse.style.display = "block"; // Show the mouse to begin
 
+    // Use the "animation frames" from offsetFrames to translate/offset the mouse
     if (index < offsetFrames.length) {
-      console.log(offsetFrames[index]);
       mouse.style.transform = "translate(0px, " + offsetFrames[index] + ")";
       index++;
+
       requestAnimationFrame(surprise);
     }
   }

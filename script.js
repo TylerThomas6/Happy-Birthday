@@ -69,6 +69,8 @@ function surpriseMouse() {
   document.getElementById("clickable-cheese").addEventListener("click", surprise);
 
   let offsetFrames = [];
+  let index = 0;
+  
   let startingPercentage = -80;
   let curOffset = 0;
   while (startingPercentage < 0) {
@@ -77,16 +79,6 @@ function surpriseMouse() {
     offsetFrames.push(curOffset + "%");
     startingPercentage = (startingPercentage / 2.5) + 1;
   }
-
-  startingPercentage = 10;
-  while (startingPercentage > 0) {
-    curOffset += startingPercentage;
-    offsetFrames.push(curOffset + "%");
-    offsetFrames.push(curOffset + "%");
-    startingPercentage = (startingPercentage / 2) - 1;
-  }
-  
-  let index = 0;
 
   function surprise() {
     console.log("Surpise!" + index);

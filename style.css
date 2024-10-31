@@ -288,6 +288,28 @@ img {
   display: none; /* Have the gif hidden at the very start */
 }
 
+#clickable-cheese {
+  position: fixed;
+  bottom: 5%;
+  width: 9%;
+}
+
+#clickable-cheese-text {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+}
+
+#surprise-mouse {
+  position: fixed;
+  bottom: 5%;
+  transform: translate(-4%, -60%);
+  width: 9%;
+  z-index: -1;
+  
+  /*display: none; /* Have the gif hidden at the very start */
+}
+
 #wheel {
   position: relative;
   top: 0%;

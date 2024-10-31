@@ -274,9 +274,18 @@ img {
 /* Starting information for the running mouse gif */
 #running-mouse {
   position: fixed;
-  display: none; /* Have the gif hidden at the very start */
   bottom: -40%;
   width: 50%;
+  display: none; /* Have the gif hidden at the very start */
+}
+
+/* Starting information for the floating mouse gif */
+#floating-mouse {
+  position: fixed;
+  top: -40%;
+  right: 0%;
+  width: 30%;
+  display: none; /* Have the gif hidden at the very start */
 }
 
 #wheel {

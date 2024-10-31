@@ -8,7 +8,7 @@ function startMovingMouseGifOnLoad() {
   let position = STARTING_POSITION; // Current position off-screen
 
   function moveMouse() {
-    position += 5; // Adjust speed (higher value means faster)
+    position += 2.5; // Adjust speed (higher value means faster)
     mouse.style.left = position + "px";
 
     if (position < screenWidth) {
@@ -40,7 +40,7 @@ function startFloatingMouseGifOnLoad() {
   let position = STARTING_POSITION; // Current position off-screen
 
   function floatMouseDown() {
-    position += 2; // Adjust speed (higher value means faster)
+    position += 1; // Adjust speed (higher value means faster)
     mouse.style.top = position + "px";
 
     if (position < screenHeight) {
